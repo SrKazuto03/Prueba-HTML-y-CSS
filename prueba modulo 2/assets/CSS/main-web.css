@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/623/657/non_2x/template-dark-navy-blue-luxury-premium-abstract-background-with-luxury-triangles-pattern-and-gold-lighting-lines-illustration-vector.jpg);
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+    background-size: cover;
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+/* Sesion portafolio principal*/
+
+
+.page__title {
+    display: inline-block;
+    padding: 40px;
+    text-shadow: 1px 1px rgba(9, 144, 222);
+    background: linear-gradient(transparent, #48e);
+    font-size: 40px;
+    width: 100%;
+    color: #000;
+
+}
+
+
+.navbar {
+    position: relative;
+    bottom: 100px;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    padding: 100px;
+    background-color: #08080867;
+    margin-top: 15%;
+}
+
+
+.navbar a {
+    display: inline-block;
+    color: #000000;
+    padding: 14px 20px;
+    align-content: center;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 30px;
+    margin: 0 20px;
+    width: 200px;
+    height: 100px;
+}
+
+
+.navbar a:hover {
+    color: bisque;
+    animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: rgb(9, 144, 222);
+    font-weight: bold;
+    font-size: 20px;
+    background: linear-gradient(transparent, #48e);
+    color: #000000;
+    width: 100%;
+    padding: 40px;
+}
+
+/*Fin de portafolio principal*/
+
+/* Sesion de el primer enlace */
+/* sesion para el about-me*/
+
+.main__title {
+    display: inline-block;
+    padding: 40px;
+    text-shadow: 1px 1px rgba(9, 144, 222);
+    background: linear-gradient(transparent, #48e);
+    font-size: 40px;
+    width: 100%;
+    color: #000;
+}
+
+.box__description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+}
+
+.box__container {
+    position: relative;
+    margin-top: 100px;
+}
+
+.my__photo img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 20px #7a7a7a7d;
+    border: none;
+    border-radius: 50%;
+}
+
+.my_personal_information {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.422);
+    padding: 80px;
+    letter-spacing: 2px;
+    line-height: 3;
+    font-size: 20px;
+}
+
+
+
+.data__info {
+    background-color: rgba(84, 83, 83, 0.15);
+}
+
+.my_personal_information li {
+    list-style: none;
+}
+
+
+/* Sesion para el enlace Project*/
+/*en este apartado estara toda la sesion de projectos y una breve descripcion personal 
+con los projectos hechos hasta ahora*/
+
+.my__projects h2 {
+    background: linear-gradient(transparent, #48e);
+    font-size: 60px;
+    padding: 30px;
+}
+
+.my__projects h3 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.my__projects p {
+    color: white;
+}
+
+.projects__description {
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 20px;
+    align-content: center;
+    text-align: justify;
+    background: linear-gradient(rgba(137, 137, 137, 0.579), transparent);
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background: linear-gradient(rgba(128, 128, 128, 0.514), transparent);
+    color: white;
+    margin: auto;
+    margin-top: 40px;
+    max-width: 1280px;
+    width: 100%;
+    gap: 20px;
+}
+
+.grid__container ul li {
+    list-style: none;
+}
+
+.grid__container>.project1,
+.project2,
+.project3,
+.project4 {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    height: 150px;
+}
+
+.grid__container #info__project1 {
+    font-size: 25px;
+    border: 1px solid #ccc;
+    line-height: 2;
+}
+
+.grid__container #info__project2 {
+    font-size: 25px;
+    border: 1px solid #ccc;
+    line-height: 3;
+}
+
+.grid__container #info__project3 {
+    font-size: 25px;
+    border: 1px solid #ccc;
+    align-content: center;
+}
+
+.grid__container #view__project {
+    font-size: 25px;
+    border: 1px solid #ccc;
+    align-content: center;
+    text-decoration: none underline;
+    color: #ccc;
+
+}
+
+#my_projects {
+    color: white;
+    margin-bottom: 15px
+}
+
+#project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+/*Sesion para la pagina Contact Me aca esta el formulario y el enlace hacia mi github*/
+
+.formulary_input {
+    color: white;
+}
+
+.formulary {
+    display: flex;
+    background-color: rgba(4, 14, 87, 0.479);
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.contact__me__head {
+    display: inline-block;
+    padding: 40px;
+    text-shadow: 1px 1px rgba(9, 144, 222);
+    background: linear-gradient(transparent, #48e);
+    font-size: 40px;
+    width: 100%;
+    color: #000;
+}
+
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 20px;
+}
+
+label {
+    margin: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+
+select  {
+    background-color: rgba(30, 27, 116, 0.383) !important;
+    color: #6a6969 !important;
+}
+
+.field input,
+select,
+textarea {
+    padding: 20px;
+    font-size: 14px;
+    background: linear-gradient(transparent, #090909);
+    color: #fff;
+    width: 100%;
+}
+
+.field input,
+select,
+textarea::placeholder {
+    color: #ccc;
+    font-size: 20px;
+}
+
+
+button {
+    background-color: #007bff;
+    width: 100px;
+    height: 50px;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+input:hover {
+    background: linear-gradient(transparent, #cccccc17);
+}
+
+select .field__in {
+    background-color: #1c1e5561 !important;
+    color: rgb(18, 18, 18);
+}
+
+
+button:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: bounce 0.5s ease;
+}
+
+.super__button {
+    display: inline-block;
+    padding: 12px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #7f00ff, #00c6ff);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.super__button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.contact__info {
+    padding: 40px;
+    text-shadow: 1px 1px rgba(9, 144, 222);
+    background: linear-gradient(transparent, #48e);
+    font-size: 40px;
+    width: 100%;
+    color: #000;
+
+}
+
+.contact__info a {
+    padding: 20px;
+    text-shadow: 1px 1px rgba(9, 144, 222);
+    background: linear-gradient(transparent, rgba(68, 136, 238, 0.2));
+    font-size: 30px;
+    color: #000;
+}
+
+.contact__info a:hover {
+    color: #ccc;
+}
+
+strong {
+    color: rgba(9, 144, 222);
+}
+
+
+/*Sesion responsive para la pagina principal */
+
+/*Mobile*/
+@media (min-width: 480px) {
+
+    .page__title,
+    .contact__me__head,
+    .contact__info {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .navbar a {
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+
+    footer {
+        position: relative;
+        top: 0;
+        background: linear-gradient(rgba(0, 0, 255, 0.231), rgba(68, 136, 238, 0.982));
+    }
+
+    .my__photo {
+        height: 300px;
+        width: 100%;
+        display: flex;
+    }
+
+    .my__projects {
+        width: 100%;
+    }
+
+    .projects__description {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1rem;
+    }
+
+    .grid__container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .grid__container>.project1,
+    .grid__container>.project2,
+    .grid__container>.project3,
+    .grid__container>.project4 {
+        width: 100%;
+        height: auto;
+    }
+
+    .formulary {
+        width: 100%;
+        height: auto;
+    }
+
+    .formulary_input {
+        width: 100%;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+    }
+}
+
+
+/* Tablet*/
+@media (min-width: 768px) and (max-width: 900px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    footer {
+        background: linear-gradient(90deg, rgba(0, 0, 255, 0.414), #48e);
+    }
+
+    .my__photo img {
+        position: absolute;
+        top: -150px;
+        left: 150px;
+        width: 40vw;
+    }
+
+    .projects__description {
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+    }
+
+    .formulary,
+    input,
+    select,
+    textarea {
+        width: 100%;
+    }
+
+
+    .box__container,
+    .formulary {
+        padding: 0 20px;
+    }
+
+    button {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+/* Desktop*/
+@media (min-width: 1024px) and (max-width:1280px) {
+
+    .page__title,
+    .contact__me__head,
+    .contact__info {
+        font-size: 2rem;
+        width: 100%;
+        max-width: 1280px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .my_personal_information {
+        position: relative;
+    }
+
+    .box__container .box__photo img {
+        left: 300px;
+        width: 300px;
+    }
+
+    .projects__description {
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+    }
+}

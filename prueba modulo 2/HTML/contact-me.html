@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../assets/CSS/main-web.css">
+    <link rel="stylesheet" href="../assets/FONTS/fonts.css">
+</head>
+<body>
+    <header class="contact__me__head">
+        <h2>Contact Me</h2>
+    </header>
+    <main>
+        <section class="formulary_input">
+            <form method="get" class="formulary">
+                <div class="field">
+                    <label for="name">Fullname</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your fullname" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="field">
+                    <label for="country">Country</label>
+                    <select class="field__in" name="country" required>
+                        <option disabled>Select an option</option>
+                        <option value="+57">Colombia</option>
+                        <option value="+1">USA</option>
+                        <option value="+49">Germany</option>
+                        <option value="+33">France</option>
+                        <option value="+44">England</option>
+                        <option value="+52">Mexico</option>
+                        <option value="+81">Japan</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="2" required></textarea>
+                </div>
+                <div class="field">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
+        <section class="Social_media">
+            <h3 class="contact__info">More Info</h3>
+            <ul class="link_to_github">
+                <li class="contact__info">GitHub: <a href="https://github.com/SrKazuto03" target="_blank">Go to GitHub</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
